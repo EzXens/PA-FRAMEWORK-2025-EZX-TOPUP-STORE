@@ -1,0 +1,304 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+
+/* @import "./node_modules/flyonui/variants.css"; */
+
+@source "./node_modules/flyonui/dist/index.js"; /* Require only if you want to use FlyonUI JS component */
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* -----------------------
+   LIGHT THEME (default)
+   ----------------------- */
+[data-theme="light"] {
+
+  --p:  #D80032; 
+  --p-focus: #0041A8;
+  --s:  #FFB400; 
+  --a:  #8B5CF6; 
+
+  --p2:#D80032; 
+
+  --bg1: #eceff1; /* base background (page) */
+  --bg2: #FFFFFF; /* card / surface */
+  --bg3: #D80032; /* surface alt / subtle edges */
+  --text1: #FFFFFF;
+  --textsub1: #000000;
+
+  /* feedback */
+  --success: #16A34A;
+  --error:   #DC2626;
+
+  --bg-gif: url('images/redwhite.gif');
+  --bg-hero: url('images/L-bghero.jpg');
+  --segitiga: #ff0033;
+}
+
+/* -----------------------
+   DARK THEME
+   ----------------------- */
+[data-theme="dark"] {
+
+  --p:  #22007C; /* primary - neon cyan (CTA utama) */
+  --p-focus: #00C4E6;
+  --p2:#430cd8; 
+  --s:  #FF3DA1; /* secondary - n eon magenta (badges / highlights) */
+  --a:  #FBBF24; /* accent - neon yellow (alerts / promos) */
+
+
+  --bg1: #02010A; /* base background (page very dark) */
+  --bg2: #04052E; /* card / surface */
+  --bg3: #140152; /* surface alt */
+
+
+  --text1: #FFFFFF;
+  --textsub1: #FFFFFF;
+
+  /* feedback */
+  --success: #22C55E;
+  --error:   #EF4444;
+
+  --bg-gif: url('images/darkblue.gif');
+  --bg-hero: url('images/D-bghero.jpg');
+  --segitiga: #00e0ff;
+}
+
+
+  .segitiga-bergerak div {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 75px solid var(--segitiga);
+    z-index: 1;
+  }
+
+
+  .segitiga-bergerak div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: mymove 15s linear infinite;
+    ;
+  }
+
+  .segitiga-bergerak div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: mymove 12s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: mymove 7s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(4) {
+    top: 40%;
+    left: 40%;
+    animation: mymove 10s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(5) {
+    top: 80%;
+    left: 30%;
+    animation: mymove 14s linear infinite;
+    ;
+  }
+
+  .segitiga-bergerak div:nth-child(6) {
+    top: 50%;
+    left: 70%;
+    animation: mymove 8s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(7) {
+    top: 10%;
+    left: 80%;
+    animation: mymove 11s linear infinite;
+    ;
+  }
+
+  .segitiga-bergerak div:nth-child(8) {
+    top: 20%;
+    left: 20%;
+    animation: mymove 13s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(9) {
+    top: 70%;
+    left: 90%;
+    animation: mymove 14s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(10) {
+    top: 30%;
+    left: 10%;
+    animation: mymove 14s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(11) {
+    top: 65%;
+    left: 60%;
+    animation: mymove 9s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(12) {
+    top: 35%;
+    left: 25%;
+    animation: mymove 7s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(13) {
+    top: 50%;
+    left: 80%;
+    animation: mymove 8s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(14) {
+    top: 40%;
+    left: 55%;
+    animation: mymove 10s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(15) {
+    top: 15%;
+    left: 70%;
+    animation: mymove 13s linear infinite;
+  }
+
+  .segitiga-bergerak div:nth-child(16) {
+    top: 55%;
+    left: 30%;
+    animation: mymove 13s linear infinite;
+  }
+
+/* Responsive helpers */
+
+img {
+  max-width: 100%;
+}
+
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.dashboard-grid.cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.dashboard-grid.cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+@media (max-width: 1024px) {
+  .navbar .menu-horizontal {
+    display: none;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .navbar .btn {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .tabs-boxed {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar .btn-ghost {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .table-responsive table {
+    min-width: 40rem;
+  }
+
+  .modal-box {
+    width: 95vw;
+    max-width: 32rem;
+  }
+}
+
+  @keyframes mymove {
+    0% {
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1;
+    }
+
+    20% {
+      transform: scale(1.2) translateY(-30px) rotate(72deg);
+      opacity: 0.4;
+    }
+
+    40% {
+      transform: scale(0.8) translateY(-60px) rotate(144deg);
+      opacity: 0.2;
+    }
+
+    60% {
+      transform: scale(1.2) translateY(-90px) rotate(216deg);
+      opacity: 0.2;
+    }
+
+    80% {
+      transform: scale(0.8) translateY(-120px) rotate(288deg);
+      opacity: 0.2;
+    }
+
+    100% {
+      transform: scale(1.5) translateY(-150px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+/* End of app.css */
