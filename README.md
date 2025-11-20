@@ -41,18 +41,14 @@ Dengan panel **Admin** dan **Superadmin**, pengelolaan pesanan, data game, harga
 ### 🛠️ Admin Features
 - Dashboard admin  
 - Approve / Reject bukti pembayaran  
-- Manajemen transaksi  
+- CRUD Game
 - Melihat detail user & pesanan  
-- Notifikasi status pesanan  
 - Verifikasi bukti pembayaran  
 
 ---
 
 ### 🛡️ Superadmin Features
-- CRUD Admin  
-- CRUD Game  
-- CRUD Product Package  
-- CRUD Payment Method  
+- CRUD Admin   
 - Monitoring seluruh transaksi  
 - Statistik penjualan  
 
