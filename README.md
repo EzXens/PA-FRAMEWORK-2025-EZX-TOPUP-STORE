@@ -8,13 +8,14 @@ Platform top up game cepat, aman, dan modern. Dibangun menggunakan **Laravel**, 
 ## 🚀 Tech Stack
 
 ### Backend  
-- <img src="{https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white}" />
-- ![image]({https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white }) 
-- ![image]({https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white }) 
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### Frontend  
-- ![image]({ https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white }) 
-- ![image]({ https://img.shields.io/badge/daisyUI-1ad1a5?style=for-the-badge&logo=daisyui&logoColor=white })
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![daisyUI](https://img.shields.io/badge/daisyUI-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
+
 
 ## 📌 Deskripsi Project
 EzX Game Top Up Store adalah website top up game berbasis web yang dirancang untuk memberikan pengalaman pembelian cepat dan efisien.  
